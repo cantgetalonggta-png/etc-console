@@ -1,1 +1,55 @@
-placeholder
+{
+  "schema": "atlas.ontology.v1",
+  "generated_at": "2026-11-03T08:31:44Z",
+  "stats": {
+    "documents": 6,
+    "atoms": 67,
+    "nodes": 109,
+    "edges": 165,
+    "tags": [
+      "api-integration",
+      "deploy",
+      "general",
+      "grok-build",
+      "multi-agent",
+      "public-research"
+    ]
+  },
+  "modes": ["plan", "implement", "run", "review", "deploy", "continue", "postmortem"],
+  "agents": ["Rex", "Zagan", "Aurora", "Helix", "Luna", "Orion"],
+  "capabilities": [
+    {"id": "cap:skills", "label": "Skills"},
+    {"id": "cap:commands", "label": "Slash Commands"},
+    {"id": "cap:agents", "label": "Agents"},
+    {"id": "cap:hooks", "label": "Hooks"},
+    {"id": "cap:mcp", "label": "MCP Servers"},
+    {"id": "cap:lsp", "label": "LSP Servers"},
+    {"id": "cap:marketplace", "label": "Plugin Marketplace"},
+    {"id": "cap:vercel-http", "label": "Vercel HTTP Surface"},
+    {"id": "cap:local-mcp-stdio", "label": "Local MCP stdio"},
+    {"id": "cap:iac", "label": "Infrastructure as Code"},
+    {"id": "cap:pdf-ingest", "label": "PDF Ingest Pipeline"},
+    {"id": "cap:atlas-console", "label": "Atlas Skill Console"}
+  ],
+  "live_surfaces": {
+    "cap:vercel-http": "https://llm-mcp-hub.vercel.app/health",
+    "cap:local-mcp-stdio": "python3 llm_mcp_hub.py",
+    "cap:iac": "artifacts/iac/",
+    "cap:pdf-ingest": "artifacts/INGEST/PDF_2026-11-03/",
+    "cap:atlas-console": "artifacts/frontend/"
+  },
+  "documents": [
+    {"id": "pdf:1180a356850d", "name": "DRIVE_COMPLETE_SKILL_ENCYCLOPEDIA.pdf", "pages": 2},
+    {"id": "pdf:891af089f105", "name": "DRIVE_LEARN_AND_ACTIVE.pdf", "pages": 3},
+    {"id": "pdf:92abd976aa3a", "name": "Grok_Build_Plugins__Tools,_Locations,_Development_.pdf", "pages": 12},
+    {"id": "pdf:epstein-daily", "name": "EPSTEIN_DAILY_FULL_2026-11-02.pdf", "pages": 2},
+    {"id": "pdf:epstein-delta", "name": "EPSTEIN_DELTA_2026-11-03_0818_NO_NEW.pdf", "pages": 1},
+    {"id": "pdf:b55614b2f601", "name": "Three_Unhinged_Debates_Catalog.pdf", "pages": 1}
+  ],
+  "safety": {
+    "osint_catalog_only": true,
+    "no_bypass_services": true,
+    "no_credential_scrapers": true,
+    "public_research_epstein_map_only": true
+  }
+}
