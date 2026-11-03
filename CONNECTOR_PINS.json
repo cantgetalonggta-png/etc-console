@@ -1,0 +1,19 @@
+{
+  "generated": "2026-11-03T22:00:00Z",
+  "github": {
+    "login": "cantgetalonggta-png",
+    "id": 277421290
+  },
+  "vercel": {
+    "team_id": "team_kgQcPVmumwtmK3MdAGlxKJtg",
+    "slug": "echo-ec69"
+  },
+  "google_drive": {
+    "swarm_state_folder_id": "1FYoOdLbrn5doHbaEllHSYAUBde-Fk4mX"
+  },
+  "repos": {
+    "etc_console": "cantgetalonggta-png/etc-console",
+    "atlas_skill_console": "cantgetalonggta-png/atlas-skill-console"
+  },
+  "autonomy": "Automations + connectors; MCP local secondary"
+}

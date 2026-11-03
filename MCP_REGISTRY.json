@@ -1,1 +1,106 @@
-PLACEHOLDER
+{
+  "mcpServers": {
+    "core-infrastructure__filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/workdir/artifacts"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "core-infrastructure__memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "document-intelligence__filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/workdir/artifacts"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "document-intelligence__memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "agent-orchestration__memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "agent-orchestration__sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "research-archival__filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/workdir/artifacts"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "research-archival__memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "research-archival__sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "deploy-everything__filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/workdir/artifacts"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "deploy-everything__github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/",
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "dev-quality__filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/workdir/artifacts"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "dev-quality__github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/",
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "dev-quality__sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "skill-tree-engine-pack__memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "skill-tree-engine-pack__filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/home/workdir/artifacts"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    },
+    "skill-tree-engine-pack__sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": { "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/" }
+    }
+  },
+  "_meta": {
+    "updated": "2026-11-03T06:30:00Z",
+    "note": "Dropped server-time/server-git/server-fetch — 404 on env npm mirror. Paths /home/workdir/artifacts. Primary autonomy = Grok connectors.",
+    "resolvable": [
+      "@modelcontextprotocol/server-filesystem@2.1.0",
+      "@modelcontextprotocol/server-memory@2.0.1",
+      "@modelcontextprotocol/server-sequential-thinking@2.0.0",
+      "@modelcontextprotocol/server-github@2025.4.8"
+    ],
+    "server_count": 17
+  }
+}
